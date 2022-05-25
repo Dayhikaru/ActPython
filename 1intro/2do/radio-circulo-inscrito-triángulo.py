@@ -7,4 +7,4 @@ c=7
 s = (1/2)*(a+b+c)
 
 radio = (math.sqrt(s*(s-a)(s-b)(s-c)))/s
-print(r)
+print(radio)
