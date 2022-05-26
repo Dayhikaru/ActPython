@@ -3,10 +3,10 @@ import pandas as pd
 iris = pd.read_csv('https://raw.githubusercontent.com/jrgpulido/ai4edu/master/iris%2Bheaders.csv')
 
 print('head',iris.head())
-print('')
 
-print('Tupla')
-#print(irisTUP["sepal length"])
+
+print('\nTupla')
+
 irisTUP = pd.read_csv('https://raw.githubusercontent.com/jrgpulido/ai4edu/master/iris%2Bheaders.csv',usecols = ['sepal length'])
 dataTUP = []
 for i in irisTUP.index:
@@ -16,13 +16,13 @@ print(allnodes)
 
 
 
-print('Diccionario')
+print('\nDiccionario')
 dict_from_csv = pd.read_csv('https://raw.githubusercontent.com/jrgpulido/ai4edu/master/iris%2Bheaders.csv',usecols = ['sepal width']).to_dict()
 print(dict_from_csv)
 
 
 
-print('Lista')
+print('\nLista')
 list_from_csv = pd.read_csv('https://raw.githubusercontent.com/jrgpulido/ai4edu/master/iris%2Bheaders.csv',names = ['sl','sw','pl','pw','class'])
 datalist = list_from_csv.pl.to_list()
 print(datalist)
